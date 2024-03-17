@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware', # Acrescentado após instalação da biblioteca "pip install whitenoise gunicorn"
+    'whitenoise.middleware.WhiteNoiseMiddleware', # Acrescentado após instalação da biblioteca "pip install whitenoise gunicorn"heroku
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -127,4 +127,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # Arquivos estáticos
 
 LOGOUT_REDIRECT_URL = 'index' # Redirecionando o usário para página principal quando deslogado do ADM
+
 
